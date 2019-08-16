@@ -1,5 +1,4 @@
-// import { Handlebars } from 'x-pack/plugins/canvas/common/lib/handlebars.js';
-import { Hbars } from '../../../common/lib/handlebars';
+import { Handlebars } from '../../../common/lib/handlebars';
 
 export const html = () => ({
   name: 'html',
@@ -21,7 +20,7 @@ export const html = () => ({
     }
   },
   fn: (context, args) => {
-    const compileFunctions = args.markup.map(str => Hbars.compile(String(str)));
+    const compileFunctions = args.markup.map(str => Handlebars.compile(String(str)));
     const ctx = {
       columns: [],
       rows: [],

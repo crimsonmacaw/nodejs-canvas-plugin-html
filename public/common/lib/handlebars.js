@@ -1,6 +1,6 @@
-import { Handlebars } from 'x-pack/plugins/canvas/common/lib/handlebars.js';
+import Hbars from 'handlebars/dist/handlebars';
 import { helpers } from './handlebars_helpers';
 
-helpers.forEach(helper => Handlebars.registerHelper(helper.name, helper.fn));
+helpers.forEach(helper => Hbars.registerHelper(helper.name, helper.fn));
 
-export const Hbars = Handlebars;
+export const Handlebars = Hbars;
