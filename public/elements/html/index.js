@@ -3,6 +3,7 @@ import header from './header.png';
 export const html = () => ({
   name: 'html',
   displayName: 'HTML',
+  tags: ['text'],
   help: 'Native HTML code',
   image: header,
   expression: `filters
