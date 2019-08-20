@@ -1,5 +1,3 @@
-import init from './init';
-
 export default function (kibana) {
   return new kibana.Plugin({
     require: ['interpreter', 'canvas'],
@@ -13,7 +11,5 @@ export default function (kibana) {
         enabled: Joi.boolean().default(true),
       }).default();
     },
-
-    init,
   });
 }
