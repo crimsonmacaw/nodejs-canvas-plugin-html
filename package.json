@@ -4,7 +4,7 @@
   "description": "Enable the display of html within canvas",
   "main": "index.js",
   "kibana": {
-    "version": "7.3.1",
+    "version": "7.4.2",
     "templateVersion": "1.0.0"
   },
   "scripts": {
